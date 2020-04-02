@@ -5,6 +5,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: url(assets/images/background.svg);
 }
 
 h1,
@@ -22,15 +23,16 @@ main {
   padding: 10px;
 }
 
-.logo a {
-  color: #28536b;
-  font-weight: bold;
-  text-decoration: none;
+.logo img {
+  width: 380px;
+  height: 42px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  margin: 0 160px;
+  white-space: nowrap;
 }
 
 nav a {
@@ -40,30 +42,56 @@ nav a {
   padding: 10px 20px;
 }
 
-.info {
-width: 100%;
+.content {
+  display: flex;
+  place-items: center;
+  margin: 48px 160px;
 }
 
-@media (min-width: 768px) {
-    .info {
-        width: 50%;
-       
-    }
+.info {
+  margin-right: 140px;
+}
+.info p {
+  margin-top: 36px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #393939;
+}
+.map img {
+  max-height: 75vh;
+}
+@media (max-width: 880px) {
+  header {
+    margin: 0 56px;
+    display: block;
+    text-align: center;
   }
+  .content {
+      flex-direction: column;
+      margin: 56px;
+      text-align: center;
+  }
+  .info {
+    margin: 0;
+  }
+}
 
 .buttons {
-  padding: 30px 0;
+  padding: 60px 0;
+  white-space: nowrap;
 }
-
+.buttons :first-child {
+  margin-right:36px;
+}
 a.button {
   text-transform: uppercase;
   border-radius: 10px;
-  height: 40px;
-  width: 250px;
-  font-size: 20px;
+  height: 38px;
+  width: 240px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
-  padding: 10px;
+  padding: 22px 40px;
 }
 
 a.button.primary {
