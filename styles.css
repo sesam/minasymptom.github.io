@@ -5,7 +5,9 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-image: url("assets/images/background.svg");
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: fit-content;
 }
 
 h1,
@@ -17,7 +19,7 @@ h6 {
   color: #52a4b3;
 }
 main {
-  max-width: 1500px;
+  max-width: 800px;
   margin: 50px auto;
   height: 100%;
   padding: 10px;
@@ -31,8 +33,9 @@ main {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 0 160px;
+  width: 100%;
   white-space: nowrap;
+  margin-top: 40px;
 }
 
 nav a {
@@ -53,15 +56,20 @@ nav a:hover {
 }
 
 .content {
-  display: flex;
-  place-items: center;
-  margin: 48px 160px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.info {
+.main {
+  margin-top: 60px;
+  display: flex;
+  place-items: center;
+}
+
+.about {
   margin-right: 140px;
 }
-.info p {
+.about p {
   margin-top: 36px;
   font-size: 18px;
   line-height: 32px;
@@ -69,21 +77,6 @@ nav a:hover {
 }
 .map img {
   max-height: 75vh;
-}
-@media (max-width: 880px) {
-  header {
-    margin: 0 56px;
-    display: block;
-    text-align: center;
-  }
-  .content {
-    flex-direction: column;
-    margin: 56px;
-    text-align: center;
-  }
-  .info {
-    margin: 0;
-  }
 }
 
 .buttons {
@@ -105,6 +98,7 @@ a.button {
   border: none;
   padding: 22px 40px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 a.button.primary {
@@ -130,4 +124,63 @@ a.button.secondary:hover {
   position: relative;
   left: 5px;
   top: 3px;
+}
+
+.wave {
+  display: block;
+  background-image: url("assets/images/background.svg");
+  flex-grow: 1;
+  height: 250px;
+}
+
+.info {
+  background: #f2f8f8;
+}
+.questions {
+  display: flex;
+  justify-content: space-between;
+}
+.questions h1,
+ul {
+  display: inline-block;
+}
+
+.questions h1 {
+  font-size: 54px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.questions li {
+  color: #52a4b3;
+  font-size: 24px;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 30px;
+}
+
+.common-questions {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 880px) {
+  .content {
+    width: 100%;
+    margin: 40px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .map {
+    opacity: 0.2;
+    position: absolute;
+    top: 50px;
+  }
+
+  .about {
+    z-index: 1;
+  }
 }

@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <main>
+    <div class="content">
       <header>
         <div class="logo">
           <a href="index.html">
@@ -29,30 +29,57 @@
           <a href="#">Kontakta oss</a>
         </nav>
       </header>
-      <div class="content">
-        <div class="info">
-          <h2>
-            minasymptom.se är en tjänst som erbjuder en kollektiv datainsamling
-            för symptom av pågående sjukdomsutbrott i Sverige
-          </h2>
-          <p>
-            Genom att rapportera in dina symptom bidrar du till att kartlägga
-            förändringar av sjukdomssymptom i vårt samhälle. All information som
-            samlas in är anonym och möjliggör för alla intresserade att kunna ta
-            del av informationen som samlats in.
-          </p>
+    </div>
+    <div class="content main">
+      <div class="about">
+        <h1>
+          minasymptom.se är en tjänst som erbjuder en kollektiv datainsamling
+          för symptom av pågående sjukdomsutbrott i Sverige
+        </h1>
+        <p>
+          Genom att rapportera in dina symptom bidrar du till att kartlägga
+          förändringar av sjukdomssymptom i vårt samhälle. All information som
+          samlas in är anonym och möjliggör för alla intresserade att kunna ta
+          del av informationen som samlats in.
+        </p>
 
-          <div class="buttons">
-            <a class="button secondary">Läs mer om oss</a>
-            <a class="button primary"
-              >Jag vill bidra <span class="icon-link"></span
-            ></a>
-          </div>
-        </div>
-        <div class="map">
-          <img src="assets/images/sweden-map.svg" alt="Sverige karta" />
+        <div class="buttons">
+          <a href="#questions" class="button secondary">Läs mer om oss</a>
+          <a class="button primary"
+            >Jag vill bidra <span class="icon-link"></span
+          ></a>
         </div>
       </div>
-    </main>
+      <div class="map">
+        <img src="assets/images/sweden-map.svg" alt="Sverige karta" />
+      </div>
+    </div>
+
+    <span class="wave"></span>
+
+    <div class="info">
+      <div id="questions" class="content questions">
+        <div class="common-questions">
+          <h1>Vanliga frågor</h1>
+          <img
+            src="assets/images/minimap.svg"
+            alt="Karta med ett förstoringsglas"
+          />
+        </div>
+        <div>
+          <ul>
+            <li>Vad innebär öppen data?</li>
+            <li>Varför ska jag rapportera mina symptom?</li>
+            <li>Lagrar ni mina personuppgifter?</li>
+            <li>Hur sparas och publiceras insamlad data?</li>
+            <li>Varför finns denna tjänst?</li>
+            <li>Vilka står bakom minasymptom.se?</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <!-- <h1>Kontakta oss</h1> -->
+      </div>
+    </div>
   </body>
 </html>
