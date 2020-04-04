@@ -2,18 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>minasymptom.se</title>
     <meta
-      name="description"
-      content="“Mina symptom” är en tjänst som erbjuder en kollektiv datainsamling för symptom av pågående sjukdomsutbrott i Sverige."
+    name="description"
+    content="“Mina symptom” är en tjänst som erbjuder en kollektiv datainsamling för symptom av pågående sjukdomsutbrott i Sverige."
     />
     <meta name="author" content="http://minasyptom.se" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>minasymptom.se</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js"></script>
   </head>
 
   <body>
@@ -25,8 +26,8 @@
           </a>
         </div>
         <nav>
-          <a href="#">Vanliga frågor</a>
-          <a href="#">Kontakta oss</a>
+          <a href="#questions">Vanliga frågor</a>
+          <a href="#contact">Kontakta oss</a>
         </nav>
       </header>
     </div>
@@ -45,7 +46,7 @@
 
         <div class="buttons">
           <a href="#questions" class="button secondary">Läs mer om oss</a>
-          <a class="button primary"
+          <a id="btn-open-form" class="button primary"
             >Jag vill bidra <span class="icon-link"></span
           ></a>
         </div>
@@ -68,7 +69,7 @@
         </div>
         <div>
           <ul>
-            <li>Vad innebär öppen data?</li>
+            <li><div></div>Vad innebär öppen data?</li>
             <li>Varför ska jag rapportera mina symptom?</li>
             <li>Lagrar ni mina personuppgifter?</li>
             <li>Hur sparas och publiceras insamlad data?</li>
@@ -77,8 +78,9 @@
           </ul>
         </div>
       </div>
-      <div class="content">
-        <!-- <h1>Kontakta oss</h1> -->
+      <div class="content contact">
+        <h1>Kontakta oss</h1>
+        <p>Email: info@minasymptom.se</p>
       </div>
     </div>
   </body>
