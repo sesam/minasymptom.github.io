@@ -146,22 +146,32 @@ ul {
 }
 
 .questions h1 {
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
 .questions li {
   color: #52a4b3;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   list-style-type: none;
-  padding: 30px;
+  padding: 18px;
+  border-bottom: 2px solid #52a4b326;
+}
+.questions li:first-of-type{
+  border-top: 2px solid #52a4b326;
 }
 
 .common-questions {
   display: flex;
   flex-direction: column;
+}
+
+.contact h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 880px) {
