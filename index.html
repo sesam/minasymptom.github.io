@@ -1,70 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>minasymptom.se</title>
-	<meta name="description" content="“Mina symptom” är en tjänst som erbjuder en kollektiv datainsamling för symptom av pågående sjukdomsutbrott i Sverige.">
-	<meta name="author" content="https://minasymptom.se">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-	<![endif]-->
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
-	<![endif]-->
-	<!--[if gt IE 8]><!-->
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-	<!--<![endif]-->
-	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-	<style>
-		body {
-			line-height: 1.7em;
-			color: #000;
-			background-color: #ddd;
-			font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-			text-shadow: 1px 1px 16px rgba(255, 255, 255, 0.8);
-			font-size: 34px;
-			text-align: center;
-			margin-top: 85px;
-		}
-		h1, h2, h3, h4, h5, h6, label { color: #fff; }
-        div.body-text {
-            margin: 0 75px 0 75px;
-            font-size: 18px;
-            line-height: 1.4em;
-            padding: 20px;
-            background-color:rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-        }
-	</style>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="“Mina symptom” är en tjänst som erbjuder en kollektiv datainsamling för symptom av pågående sjukdomsutbrott i Sverige."
+    />
+    <meta name="author" content="https://minasymptom.se" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>minasymptom.se</title>
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#28536b" />
+    <meta name="msapplication-TileColor" content="#e6f2f5" />
+    <meta name="theme-color" content="#28536b" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
 
-<body>
-	<div class="pure-g">
-		<div class="pure-u-1">
-			<h1>minasymptom.se</h1>
-			<h2>Kollektiv datainsamling för symptom.</h2>
-			
-			<div class="body-text">
-                <p>
-				Mina symptom är en tjänst som erbjuder en kollektiv datainsamling för symptom av pågående sjukdomsutbrott i Sverige.
-				Genom att rapportera in dina symptom bidrar du till en ökad förståelse om pågående epidemier i vårt samhälle.
-                Den data som samlas in synligör symptomutveckling och bidrar till möjligörandet av kollektiva insatser.
-                </p>
-            </div>
+  <body>
+    <div class="content">
+      <header>
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.svg" alt="Logotyp" />
+          </a>
+        </div>
+        <nav>
+          <a href="#questions">Vanliga frågor</a>
+          <a href="#contact">Kontakta oss</a>
+        </nav>
+      </header>
+    </div>
+    <div class="content main">
+      <div class="about">
+        <h1>
+          minasymptom.se är en tjänst som erbjuder en kollektiv datainsamling
+          för symptom av pågående sjukdomsutbrott i Sverige
+        </h1>
+        <p>
+          Genom att rapportera in dina symptom bidrar du till att kartlägga
+          förändringar av sjukdomssymptom i vårt samhälle. All information som
+          samlas in är anonym och möjliggör för alla intresserade att kunna ta
+          del av informationen som samlats in.
+        </p>
 
-		</div>
-	</div>
-</body>
-<script>
-$.backstretch([
-    "https://picsum.photos/id/326/1600?grayscale"
-	, "https://picsum.photos/id/294/1600?grayscale"
-	, "https://picsum.photos/id/1008/1600?grayscale"
-    , "https://picsum.photos/id/1062/1600?grayscale"
-], {duration: 3000, fade: 750});
-</script>
+        <div class="buttons">
+          <a href="#questions" class="button secondary">Läs mer om oss</a>
+          <a id="btn-open-form" class="button primary"
+            >Jag vill bidra <span class="icon-link"></span
+          ></a>
+        </div>
+      </div>
+      <div class="map">
+        <img src="assets/images/sweden-map.svg" alt="Sverige karta" />
+      </div>
+    </div>
+
+    <span class="wave"></span>
+
+    <div class="info">
+      <div id="questions" class="content questions">
+        <div class="common-questions">
+          <h1>Vanliga frågor</h1>
+          <img
+            src="assets/images/minimap.svg"
+            alt="Karta med ett förstoringsglas"
+          />
+        </div>
+        <div class="faq">
+          <ul>
+            <li class="tab">
+              <input id="q1" type="checkbox" hidden />
+              <label for="q1" class="tab-label"
+                >Vad händer med informationen som samlas in?</label
+              >
+              <p class="tab-content">
+                Tjänsten minasymptom.se bedrivs som ett öppet projekt, med öppen
+                källkod och öppen data. Detta betyder att all data som samlas in
+                är tillgänglig för alla. Det inte finns inget vinstdrivande
+                intresse bakom. Kostnader i form av tid och tjänstens hittills
+                små materiella kostnader täcks av donationer från
+                initiativtagarna.
+              </p>
+            </li>
+            <li>
+              <input id="q2" type="checkbox" hidden />
+              <label for="q2" class="tab-label">
+                Varför ska jag rapportera mina symptom?</label
+              >
+              <p class="tab-content">
+                Vi tror på idén att vi kollektivt kan komma mycket längre än
+                enskilt. Vi tror även på att med en bättre statistik kan både
+                vården och medborgarna bättre skydda befolkningen.
+              </p>
+            </li>
+            <li>
+              <input id="q3" type="checkbox" hidden />
+              <label for="q3" class="tab-label">
+                Lagrar ni mina personuppgifter?</label
+              >
+              <p class="tab-content">
+                Vi lagrar ej och ber dig inte om någon personlig information
+                eller uppgifter som kan kopplas till en enskild person.
+              </p>
+            </li>
+            <li>
+              <input id="q4" type="checkbox" hidden />
+              <label for="q4" class="tab-label">
+                Hur sparas och publiceras insamlad data?</label
+              >
+              <p class="tab-content">
+                Varje dag sammanställs inkomna rapporter. Regioner med minst 5
+                inrapporteringar publiceras. Det ger möjlighet för andra att
+                göra fler analyser. Möjliga intressenter kan till exempel vara
+                forskare, myndigheter, offentliga och privata vårdverksamheter,
+                eller andra privata initiativtagare som oss.
+              </p>
+            </li>
+            <li>
+              <input id="q5" type="checkbox" hidden />
+              <label for="q5" class="tab-label">
+                Varför finns denna tjänst</label
+              >
+              <p class="tab-content">
+                För att vi som skapat tjänsten tror den kan vara till nytta för
+                att hantera nuvarande och framtida sjukdomar.
+              </p>
+            </li>
+            <li>
+              <input id="q6" type="checkbox" hidden />
+              <label for="q6" class="tab-label">
+                Vilka står bakom minasymptom.se?</label
+              >
+              <p class="tab-content">
+                “Mina symptom” är framtagen av ett gäng professionella IT
+                specialister som tror på solidaritet och värnar om sina
+                medmänniskors hälsa.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content contact">
+        <h1>Kontakta oss</h1>
+        <p>Email: info@minasymptom.se</p>
+      </div>
+    </div>
+  </body>
 </html>
