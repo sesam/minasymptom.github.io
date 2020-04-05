@@ -195,6 +195,7 @@ ul {
 }
 .tab-label {
   line-height: 28px;
+  cursor: pointer;
 }
 p.tab-content {
   max-height: 0;
