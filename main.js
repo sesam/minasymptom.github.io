@@ -7,11 +7,13 @@ function get3words() {
   const b = Math.floor(Math.random() * 2048);
   const checksum_bits = 3;
   const c = Math.floor(Math.random() * 2048) >> checksum_bits; // reserve some bits, to use for checksum / error correction
-  const check = (a | b | c) * 13 * 37; // just two random-ish primes :)
+  const check = a | (b * 13) | (c * 37); // just two random-ish primes :)
   const last_3bits = check % 2 ** checksum_bits;
   return (
-    bip39words[a] + " " +
-    bip39words[b] + " " +
+    bip39words[a] +
+    " " +
+    bip39words[b] +
+    " " +
     bip39words[c * 2 ** checksum_bits + last_3bits]
   );
 }
